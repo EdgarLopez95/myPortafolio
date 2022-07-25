@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+  .heder .nav {
+    display: none;
+  }
+  .mainIndex {
+    .secctionOne {
+      padding: 0 40px;
+    }
+  }
+  .heder .navCelu {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $backgroundColor;
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 50px;
+      justify-content: space-around;
+      color: white;
+      li {
+        display: flex;
+        justify-content: center;
+        line-height: 20px;
+        border: 1px solid #071444;
+        border-width: 0 1px 0 0;
+        a {
+          img {
+            margin: 0 auto;
+            padding-top: 5px;
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+  .mainIndex .sectionIndex-dos .gridIndexDos {
+    grid-template-columns: 1fr;
+  }
+  .mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    display: none;
+  }
+}

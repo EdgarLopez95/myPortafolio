@@ -1,0 +1,39 @@
+.mainIndex {
+  .secctionOne {
+    height: 100vh;
+    background-image: url(../../../assets/bannerHomeLow.jpg);
+    padding: 0 100px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    display: flex;
+    align-items: center;
+  }
+  .secctionOne__div {
+    width: 1200px;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 30px;
+      font-family: $tipografiaSecundaria;
+      font-size: 20px;
+      color: $blueElements;
+    }
+    h1 {
+      font-size: clamp(40px, 8vw, 90px);
+      color: $colorBlueWhite;
+      font-weight: 600;
+    }
+    h2 {
+      margin-top: 10px;
+      font-size: clamp(40px, 8vw, 90px);
+      color: $colorBlueWhite;
+      font-weight: 600;
+    }
+    button {
+      @extend %button;
+      margin-top: 50px;
+      font-family: $tipografiaSecundaria;
+    }
+  }
+}

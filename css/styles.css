@@ -1,0 +1,656 @@
+@charset "UTF-8";
+:root {
+  --negro: #393939;
+  /* Tipografía */
+  --tipo-principal: "Roboto", sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+/* Opcional */
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* (Probándolo, no usar en producción) En el caso de añadir una  */
+/* p svg{
+    display: inline;
+    width: initial;
+  } */
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* opcional */
+  /* opcional */
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mainContacto .gridContacto .container #contact button[type=submit], .mainIndex .secctionOne__div button, .heder .nav .menu .resume a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color: #00aaff;
+  box-shadow: 0 0 10px #00aaff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.15s linear;
+}
+.mainContacto .gridContacto .container #contact button[type=submit]:hover, .mainIndex .secctionOne__div button:hover, .heder .nav .menu .resume a:hover {
+  background-color: #010e3d;
+  border-color: #00aaff;
+  color: #00aaff;
+  transform: translateY(-5px) scale(1);
+}
+.mainContacto .gridContacto .container #contact button[type=submit]:active, .mainIndex .secctionOne__div button:active, .heder .nav .menu .resume a:active {
+  background-color: transparent;
+  border-color: #00aaff;
+  color: #00aaff;
+  transform: translateY(5px) scale(0.95);
+}
+
+.footer .derecho, .footer .centro, .footer .izquierdo {
+  width: 100%;
+  width: 100%;
+  background-color: rgb(0, 10, 47);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px 0 15px 0;
+}
+
+.footer .derecho h3, .footer .centro h3, .footer .izquierdo h3 {
+  font-weight: bolder;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  width: 20%;
+}
+
+.heder .nav {
+  width: 100%;
+  height: 10rem;
+  background-color: rgba(0, 10, 47, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  position: fixed;
+}
+.heder .nav .logo a img {
+  width: 12rem;
+  transition: all 300ms;
+}
+.heder .nav .logo a img:hover {
+  transform: scale(1.1);
+}
+.heder .nav .menu {
+  color: #ccf2ff;
+  display: flex;
+  align-items: center;
+}
+.heder .nav .menu ul {
+  font-family: "Roboto Mono", monospace;
+}
+.heder .nav .menu ul a {
+  font-size: 1.6rem;
+  margin: 0 25px 0 0;
+  transition: all 300ms;
+}
+.heder .nav .menu ul a:hover {
+  transform: scale(1.1);
+  color: #00aaff;
+}
+.heder .nav .menu .resume a {
+  color: #0a1a44;
+  font-weight: bold;
+}
+.heder .navCelu {
+  display: none;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer .izquierdo {
+  background-color: #0a1a44;
+}
+.footer .izquierdo nav ul {
+  margin-top: 10px;
+}
+.footer .izquierdo nav ul li a {
+  transition: all 300ms;
+}
+.footer .izquierdo nav ul li a:hover {
+  transform: scale(1.1);
+  color: #00aaff;
+}
+.footer .centro {
+  background-color: #00aaff;
+}
+.footer .centro p {
+  margin: 20px 0;
+}
+.footer .derecho {
+  background-color: #0a1a44;
+}
+.footer .derecho a {
+  width: 30px;
+  margin: 5px auto;
+  transition: all 0.15s linear;
+}
+.footer .derecho a:hover {
+  transform: translateY(0px) scale(1.2);
+  filter: opacity(0.4) drop-shadow(0 0 0 #00aaff);
+}
+
+.mainIndex .secctionOne {
+  height: 100vh;
+  background-image: url(../../../assets/bannerHomeLow.jpg);
+  padding: 0 100px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+}
+.mainIndex .secctionOne__div {
+  width: 1200px;
+  margin: 0 auto;
+}
+.mainIndex .secctionOne__div p {
+  margin-bottom: 30px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  color: #00aaff;
+}
+.mainIndex .secctionOne__div h1 {
+  font-size: clamp(40px, 8vw, 90px);
+  color: #ccf2ff;
+  font-weight: 600;
+}
+.mainIndex .secctionOne__div h2 {
+  margin-top: 10px;
+  font-size: clamp(40px, 8vw, 90px);
+  color: #ccf2ff;
+  font-weight: 600;
+}
+.mainIndex .secctionOne__div button {
+  margin-top: 50px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.mainRecorrido .sectionRecorrido-uno {
+  width: 100%;
+  min-height: 400px;
+  background-color: rgb(0, 10, 47);
+}
+.mainRecorrido .sectionRecorrido-uno h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 8.4rem;
+  line-height: 400px;
+  text-align: center;
+}
+.mainRecorrido .sectionRecorrido-dos {
+  margin: 50px 0;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-izquierda div img {
+  background-color: #bccad3;
+  width: 90%;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 50px;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div {
+  width: 90%;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div h3 {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1a44;
+  padding: 20px 0;
+  font-weight: 900;
+  line-height: 30px;
+}
+.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div p {
+  font-size: 1.6rem;
+  line-height: 20px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.mainortafolio .sectionPortafolio-uno {
+  width: 100%;
+  min-height: 400px;
+  background-color: rgb(0, 10, 47);
+}
+.mainortafolio .sectionPortafolio-uno h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 8.4rem;
+  line-height: 400px;
+  text-align: center;
+}
+.mainortafolio .sectionPortafolio-dos {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  gap: 3rem;
+  grid-auto-rows: 32rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+.mainortafolio .sectionPortafolio-dos div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainServicios .sectionServicios-uno {
+  width: 100%;
+  min-height: 700px;
+  background-color: rgb(0, 10, 47);
+}
+.mainServicios .sectionServicios-uno h2 {
+  font-weight: 900;
+  color: white;
+  font-size: 8.4rem;
+  line-height: 400px;
+  text-align: center;
+}
+.mainServicios .sectionServicios-uno .servicios {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 30px;
+}
+.mainServicios .sectionServicios-uno .servicios .izquierda {
+  background-color: #00aaff;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.mainServicios .sectionServicios-uno .servicios .izquierda h3 {
+  font-weight: 900;
+  color: rgb(0, 10, 47);
+  font-size: 5.4rem;
+  line-height: 200px;
+  text-align: center;
+}
+.mainServicios .sectionServicios-uno .servicios .derecha {
+  background-color: #00aaff;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.mainServicios .sectionServicios-uno .servicios .derecha h3 {
+  font-weight: 900;
+  color: rgb(0, 10, 47);
+  font-size: 5.4rem;
+  line-height: 200px;
+  text-align: center;
+}
+.mainServicios .sectionRecorrido-dos {
+  margin: 50px 0;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-izquierda div img {
+  background-color: #bccad3;
+  width: 90%;
+  margin: 0 auto;
+  height: 500px;
+  border-radius: 50px;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div {
+  width: 90%;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div h3 {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0a1a44;
+  padding: 20px 0;
+  font-weight: 900;
+  line-height: 30px;
+}
+.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div p {
+  font-size: 1.6rem;
+  line-height: 20px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.mainContacto {
+  background-color: rgb(0, 10, 47);
+}
+.mainContacto .gridContacto {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mainContacto .gridContacto .sectionContacto-uno {
+  width: 100%;
+  min-height: 600px;
+}
+.mainContacto .gridContacto .sectionContacto-uno h2 {
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  font-size: 6.4rem;
+  line-height: 400px;
+  text-align: center;
+}
+.mainContacto .gridContacto .container {
+  padding: 20px 0;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.mainContacto .gridContacto .container #contact input[type=text],
+.mainContacto .gridContacto .container #contact input[type=email],
+.mainContacto .gridContacto .container #contact input[type=tel],
+.mainContacto .gridContacto .container #contact input[type=url],
+.mainContacto .gridContacto .container #contact textarea,
+.mainContacto .gridContacto .container #contact button[type=submit] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+.mainContacto .gridContacto .container #contact {
+  background: #f9f9f9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.mainContacto .gridContacto .container #contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.mainContacto .gridContacto .container #contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+.mainContacto .gridContacto .container fieldset {
+  border: medium none;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+.mainContacto .gridContacto .container #contact input[type=text],
+.mainContacto .gridContacto .container #contact input[type=email],
+.mainContacto .gridContacto .container #contact input[type=tel],
+.mainContacto .gridContacto .container #contact input[type=url],
+.mainContacto .gridContacto .container #contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+.mainContacto .gridContacto .container #contact input[type=text]:hover,
+.mainContacto .gridContacto .container #contact input[type=email]:hover,
+.mainContacto .gridContacto .container #contact input[type=tel]:hover,
+.mainContacto .gridContacto .container #contact input[type=url]:hover,
+.mainContacto .gridContacto .container #contact textarea:hover {
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+.mainContacto .gridContacto .container #contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+.mainContacto .gridContacto .container #contact button[type=submit] {
+  cursor: pointer;
+  width: 100%;
+}
+.mainContacto .gridContacto .container #contact button[type=submit]:hover {
+  background: #43a047;
+  transition: background-color 0.3s ease-in-out;
+}
+.mainContacto .gridContacto .container #contact button[type=submit]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.mainContacto .gridContacto .container .copyright {
+  text-align: center;
+}
+.mainContacto .gridContacto .container #contact input:focus,
+.mainContacto .gridContacto .container #contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+.mainContacto .gridContacto .container ::-webkit-input-placeholder {
+  color: #888;
+}
+.mainContacto .gridContacto .container :-moz-placeholder {
+  color: #888;
+}
+.mainContacto .gridContacto .container ::-moz-placeholder {
+  color: #888;
+}
+.mainContacto .gridContacto .container :-ms-input-placeholder {
+  color: #888;
+}
+
+@media screen and (max-width: 768px) {
+  .heder .nav {
+    display: none;
+  }
+  .mainIndex .secctionOne {
+    padding: 0 40px;
+  }
+  .heder .navCelu {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 10, 47);
+  }
+  .heder .navCelu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    justify-content: space-around;
+    color: white;
+  }
+  .heder .navCelu ul li {
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    border: 1px solid #071444;
+    border-width: 0 1px 0 0;
+  }
+  .heder .navCelu ul li a img {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 20px;
+  }
+  .mainIndex .sectionIndex-dos .gridIndexDos {
+    grid-template-columns: 1fr;
+  }
+  .mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

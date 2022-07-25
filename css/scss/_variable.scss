@@ -1,0 +1,55 @@
+$backgroundColor: rgb(0, 10, 47);
+$colorBlueWhite: #ccf2ff;
+$colorAzulOscuro: #0a1a44;
+$blueElements: #00aaff;
+$anchoMaximo: 1200px;
+$tipografiaSecundaria: "Roboto Mono", monospace;
+
+%button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #ffffff;
+  background-color:$blueElements;
+  box-shadow: 0 0 10px $blueElements;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.15s linear;
+  &:hover {
+    background-color: #010e3d;
+    border-color:$blueElements;
+    color:$blueElements;
+    transform: translateY(-5px) scale(1.00);
+   }
+   
+   &:active {
+    background-color: transparent;
+    border-color:$blueElements;
+    color:$blueElements;
+    transform: translateY(5px) scale(0.95);
+   }
+}
+
+%estilosFooter {
+  width: 100%;
+  width: 100%;
+  background-color: $backgroundColor;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px 0 15px 0;
+}
+
+%h3titulos {
+  font-weight: bolder;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  width: 20%;
+}
