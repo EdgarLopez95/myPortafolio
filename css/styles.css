@@ -201,7 +201,9 @@ body {
   transform: translateY(5px) scale(0.95);
 }
 
-.mainIndex .secctionTwo h3, .contacto h3 {
+.mainRecorrido .sectionTwo .universidad h3,
+.mainRecorrido .sectionTwo .trabajo h3,
+.mainRecorrido .sectionTwo .freelance h3, .mainIndex .secctionTwo h3, .contacto h3 {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
@@ -209,7 +211,9 @@ body {
   margin-bottom: 50px;
 }
 
-.mainIndex .secctionTwo .secctionTwo__contenedor .derecha p, .contacto .contenedor p {
+.mainRecorrido .sectionTwo .universidad .contenedor .texto,
+.mainRecorrido .sectionTwo .trabajo .contenedor .texto,
+.mainRecorrido .sectionTwo .freelance .contenedor .texto, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha p, .contacto .contenedor p {
   font-size: 20px;
   color: #ccf2ff;
   padding-bottom: 20px;
@@ -402,6 +406,74 @@ body {
 .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones {
   display: flex;
   gap: 20px;
+}
+.mainRecorrido .sectionOne {
+  height: 100vh;
+  background-color: rgb(0, 10, 47);
+  background-image: url(https://github.com/EdgarLopez95/myPortafolio/blob/main/assets/banner-recorrido-low.jpg?raw=true);
+  padding: 0 100px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainRecorrido .sectionOne .logo {
+  display: none;
+}
+.mainRecorrido .sectionOne .fotoPerfil {
+  max-width: 500px;
+  transition: all 300ms;
+}
+.mainRecorrido .sectionOne .fotoPerfil:hover {
+  transform: scale(1.1);
+}
+.mainRecorrido .sectionOne h1 {
+  font-size: clamp(40px, 8vw, 60px);
+  color: #ccf2ff;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+}
+.mainRecorrido .sectionTwo {
+  padding: 100px 100px;
+  background-color: rgb(0, 10, 47);
+}
+.mainRecorrido .sectionTwo .universidad,
+.mainRecorrido .sectionTwo .trabajo,
+.mainRecorrido .sectionTwo .freelance {
+  padding-top: 100px;
+}
+.mainRecorrido .sectionTwo .universidad h3,
+.mainRecorrido .sectionTwo .trabajo h3,
+.mainRecorrido .sectionTwo .freelance h3 {
+  padding-bottom: 50px;
+}
+.mainRecorrido .sectionTwo .universidad .contenedor,
+.mainRecorrido .sectionTwo .trabajo .contenedor,
+.mainRecorrido .sectionTwo .freelance .contenedor {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 50px;
+  margin: 0 auto;
+}
+.mainRecorrido .sectionTwo .universidad .contenedor .imagen,
+.mainRecorrido .sectionTwo .trabajo .contenedor .imagen,
+.mainRecorrido .sectionTwo .freelance .contenedor .imagen {
+  justify-self: center;
+}
+.mainRecorrido .sectionTwo .universidad .contenedor .imagen img,
+.mainRecorrido .sectionTwo .trabajo .contenedor .imagen img,
+.mainRecorrido .sectionTwo .freelance .contenedor .imagen img {
+  max-width: 500px;
+  transition: all 300ms;
+}
+.mainRecorrido .sectionTwo .universidad .contenedor .imagen img:hover,
+.mainRecorrido .sectionTwo .trabajo .contenedor .imagen img:hover,
+.mainRecorrido .sectionTwo .freelance .contenedor .imagen img:hover {
+  transform: scale(1.1);
 }
 .mainortafolio .sectionPortafolio-uno {
   width: 100%;
@@ -684,5 +756,24 @@ body {
   }
   .mainIndex .secctionTwo .secctionTwo__contenedor {
     grid-template-columns: 1fr;
+  }
+  .mainRecorrido .sectionOne {
+    padding: 0 40px;
+  }
+  .mainRecorrido .sectionTwo {
+    padding: 0 40px;
+  }
+  .mainRecorrido .sectionTwo .universidad .contenedor,
+.mainRecorrido .sectionTwo .trabajo .contenedor,
+.mainRecorrido .sectionTwo .freelance .contenedor {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainRecorrido .sectionOne .logo {
+    display: block;
+    width: 120px;
+    padding-bottom: 40px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=styles.css.map */

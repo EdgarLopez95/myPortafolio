@@ -43,7 +43,7 @@
   .footer {
     display: none;
   }
-//<<<<<<<<<<<<<<<<<<<<<Breakpoins Inicio>>>>>>>>>>>>>>
+  //<<<<<<<<<<<<<<<<<<<<<Breakpoins Inicio>>>>>>>>>>>>>>
   .mainIndex {
     .secctionOne {
       padding: 0 40px;
@@ -59,6 +59,34 @@
       padding: 0 40px;
       .secctionTwo__contenedor {
         grid-template-columns: 1fr;
+      }
+    }
+  }
+  .mainRecorrido {
+    .sectionOne {
+      padding: 0 40px;
+    }
+    .sectionTwo {
+      padding: 0 40px;
+      .universidad,
+    .trabajo,
+    .freelance  {
+        .contenedor {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mainRecorrido {
+    .sectionOne {
+      .logo {
+        display: block;
+        width: 120px;
+        padding-bottom: 40px;
+        margin: 0 auto;
       }
     }
   }

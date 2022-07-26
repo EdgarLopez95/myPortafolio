@@ -1,3 +1,64 @@
 .mainRecorrido {
-  
+  .sectionOne {
+    height: 100vh;
+    background-color: $backgroundColor;
+    background-image: url(https://github.com/EdgarLopez95/myPortafolio/blob/main/assets/banner-recorrido-low.jpg?raw=true);
+    padding: 0 100px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      display: none;
+    }
+    .fotoPerfil {
+      max-width: 500px;
+      transition: all 300ms;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    h1 {
+      font-size: clamp(40px, 8vw, 60px);
+      color: $colorBlueWhite;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  .sectionTwo {
+    padding: 100px 100px;
+    background-color: $backgroundColor;
+    .universidad,
+    .trabajo,
+    .freelance {
+      padding-top: 100px;
+      h3 {
+        padding-bottom: 50px;
+        @extend %estilosTitulos;
+      }
+      .contenedor {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 50px;
+        margin: 0 auto;
+        .imagen {
+          justify-self: center;
+          img {
+            max-width: 500px;
+            transition: all 300ms;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+        .texto {
+          @extend %estilosTextos;
+        }
+      }
+    }
+  }
 }
