@@ -345,6 +345,7 @@ body {
 
 .mainIndex .secctionOne {
   height: 100vh;
+  background-color: rgb(0, 10, 47);
   background-image: url(https://github.com/EdgarLopez95/myPortafolio/blob/main/assets/bannerinicio.jpg?raw=true);
   padding: 0 100px;
   background-repeat: no-repeat;
