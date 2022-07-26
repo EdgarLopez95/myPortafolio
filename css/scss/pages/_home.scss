@@ -21,11 +21,11 @@
         color: $blueElements;
       }
       h1 {
-        @extend %estilosTitulosGrandes;
+        @include estilosTitulosGrandes;
       }
       h2 {
         margin-top: 10px;
-        @extend %estilosTitulosGrandes;
+        @include estilosTitulosGrandes;
       }
       button {
         @extend %button;

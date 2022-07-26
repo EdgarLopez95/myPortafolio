@@ -5,6 +5,7 @@ $blueElements: #00aaff;
 $anchoMaximo: 1200px;
 $tipografiaSecundaria: "Roboto Mono", monospace;
 
+// <<<<<<<<<<<<<<<<<<<extends>>>>>>>>>>>>>>>>>>>>>>>
 %button {
   display: flex;
   flex-direction: row;
@@ -33,12 +34,6 @@ $tipografiaSecundaria: "Roboto Mono", monospace;
     transform: translateY(5px) scale(0.95);
   }
 }
-%estilosTitulosGrandes {
-  font-size: clamp(40px, 8vw, 90px);
-  color: $colorBlueWhite;
-  font-weight: 600;
-  
-}
 %estilosTitulos {
   text-align: center;
   font-size: 40px;
@@ -60,7 +55,6 @@ $tipografiaSecundaria: "Roboto Mono", monospace;
   font-size: 1.5rem;
   padding: 25px 0 20px 0;
 }
-
 %h3titulos {
   font-weight: bolder;
   margin: 0 auto;
@@ -69,4 +63,10 @@ $tipografiaSecundaria: "Roboto Mono", monospace;
   padding-bottom: 10px;
   border-bottom: 1px solid white;
   width: 20%;
+}
+// <<<<<<<<<<<<<<<<<<<minxin>>>>>>>>>>>>>>>>>>>>>>>
+@mixin estilosTitulosGrandes {
+  font-size: clamp(40px, 8vw, 90px);
+  color: $colorBlueWhite;
+  font-weight: 600;
 }

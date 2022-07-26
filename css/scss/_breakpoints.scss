@@ -1,6 +1,38 @@
 @media screen and (max-width: 768px) {
-  .heder .nav {
-    display: none;
+  //<<<<<<<<<<<<<<<<<<<<<Breakpoins generales>>>>>>>>>>>>>>
+  .heder {
+    .nav {
+      display: none;
+    }
+    .navCelu {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: $colorAzulOscuro;
+      padding: 5px 0;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px;
+        justify-content: space-around;
+        color: white;
+        li {
+          display: flex;
+          justify-content: center;
+          line-height: 20px;
+          border: 1px solid #38436d;
+          border-width: 0 1px 0 0;
+          a {
+            img {
+              margin: 0 auto;
+              padding-top: 5px;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
   }
   .contacto {
     padding: 0 40px;
@@ -8,11 +40,15 @@
       padding-bottom: 170px;
     }
   }
+  .footer {
+    display: none;
+  }
+//<<<<<<<<<<<<<<<<<<<<<Breakpoins Inicio>>>>>>>>>>>>>>
   .mainIndex {
     .secctionOne {
       padding: 0 40px;
-      .secctionOne__div{
-        img{
+      .secctionOne__div {
+        img {
           display: block;
           width: 120px;
           padding-bottom: 40px;
@@ -25,43 +61,5 @@
         grid-template-columns: 1fr;
       }
     }
-  }
-  .heder .navCelu {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: $colorAzulOscuro;
-    padding: 5px 0;
-    ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 50px;
-      justify-content: space-around;
-      color: white;
-      li {
-        display: flex;
-        justify-content: center;
-        line-height: 20px;
-        border: 1px solid #38436d;
-        border-width: 0 1px 0 0;
-        a {
-          img {
-            margin: 0 auto;
-            padding-top: 5px;
-            width: 20px;
-          }
-        }
-      }
-    }
-  }
-  .mainIndex .sectionIndex-dos .gridIndexDos {
-    grid-template-columns: 1fr;
-  }
-  .mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
-    grid-template-columns: 1fr;
-  }
-  .footer {
-    display: none;
   }
 }

@@ -201,12 +201,6 @@ body {
   transform: translateY(5px) scale(0.95);
 }
 
-.mainIndex .secctionOne .secctionOne__div h2, .mainIndex .secctionOne .secctionOne__div h1, .contacto .contenedor h2 {
-  font-size: clamp(40px, 8vw, 90px);
-  color: #ccf2ff;
-  font-weight: 600;
-}
-
 .mainIndex .secctionTwo h3, .contacto h3 {
   text-align: center;
   font-size: 40px;
@@ -296,6 +290,9 @@ body {
 }
 .contacto .contenedor h2 {
   text-align: center;
+  font-size: clamp(40px, 8vw, 90px);
+  color: #ccf2ff;
+  font-weight: 600;
 }
 .contacto .contenedor p {
   max-width: 450px;
@@ -366,8 +363,16 @@ body {
   font-size: 20px;
   color: #00aaff;
 }
+.mainIndex .secctionOne .secctionOne__div h1 {
+  font-size: clamp(40px, 8vw, 90px);
+  color: #ccf2ff;
+  font-weight: 600;
+}
 .mainIndex .secctionOne .secctionOne__div h2 {
   margin-top: 10px;
+  font-size: clamp(40px, 8vw, 90px);
+  color: #ccf2ff;
+  font-weight: 600;
 }
 .mainIndex .secctionOne .secctionOne__div button {
   margin-top: 50px;
@@ -398,55 +403,6 @@ body {
   display: flex;
   gap: 20px;
 }
-.mainRecorrido .sectionRecorrido-uno {
-  width: 100%;
-  min-height: 400px;
-  background-color: rgb(0, 10, 47);
-}
-.mainRecorrido .sectionRecorrido-uno h2 {
-  font-weight: 900;
-  color: white;
-  font-size: 8.4rem;
-  line-height: 400px;
-  text-align: center;
-}
-.mainRecorrido .sectionRecorrido-dos {
-  margin: 50px 0;
-}
-.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-izquierda div img {
-  background-color: #bccad3;
-  width: 90%;
-  margin: 0 auto;
-  height: 500px;
-  border-radius: 50px;
-}
-.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div {
-  width: 90%;
-}
-.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div h3 {
-  font-size: 3.6rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #0a1a44;
-  padding: 20px 0;
-  font-weight: 900;
-  line-height: 30px;
-}
-.mainRecorrido .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div p {
-  font-size: 1.6rem;
-  line-height: 20px;
-  max-width: 600px;
-  margin-bottom: 40px;
-}
-
 .mainortafolio .sectionPortafolio-uno {
   width: 100%;
   min-height: 400px;
@@ -679,26 +635,6 @@ body {
   .heder .nav {
     display: none;
   }
-  .contacto {
-    padding: 0 40px;
-  }
-  .contacto .contenedor {
-    padding-bottom: 170px;
-  }
-  .mainIndex .secctionOne {
-    padding: 0 40px;
-  }
-  .mainIndex .secctionOne .secctionOne__div img {
-    display: block;
-    width: 120px;
-    padding-bottom: 40px;
-  }
-  .mainIndex .secctionTwo {
-    padding: 0 40px;
-  }
-  .mainIndex .secctionTwo .secctionTwo__contenedor {
-    grid-template-columns: 1fr;
-  }
   .heder .navCelu {
     display: block;
     position: fixed;
@@ -726,13 +662,27 @@ body {
     padding-top: 5px;
     width: 20px;
   }
-  .mainIndex .sectionIndex-dos .gridIndexDos {
-    grid-template-columns: 1fr;
+  .contacto {
+    padding: 0 40px;
   }
-  .mainRecorrido .sectionRecorrido-dos .gridRecorridoDos {
-    grid-template-columns: 1fr;
+  .contacto .contenedor {
+    padding-bottom: 170px;
   }
   .footer {
     display: none;
+  }
+  .mainIndex .secctionOne {
+    padding: 0 40px;
+  }
+  .mainIndex .secctionOne .secctionOne__div img {
+    display: block;
+    width: 120px;
+    padding-bottom: 40px;
+  }
+  .mainIndex .secctionTwo {
+    padding: 0 40px;
+  }
+  .mainIndex .secctionTwo .secctionTwo__contenedor {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */
