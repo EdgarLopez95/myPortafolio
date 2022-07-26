@@ -5,35 +5,64 @@
     padding: 0 100px;
     background-repeat: no-repeat;
     background-position: bottom;
-
     display: flex;
     align-items: center;
-  }
-  .secctionOne__div {
-    width: 1200px;
-    margin: 0 auto;
+    .secctionOne__div {
+      width: 1200px;
+      margin: 0 auto;
 
-    p {
-      margin-bottom: 30px;
-      font-family: $tipografiaSecundaria;
-      font-size: 20px;
-      color: $blueElements;
+      p {
+        margin-bottom: 30px;
+        font-family: $tipografiaSecundaria;
+        font-size: 20px;
+        color: $blueElements;
+      }
+      h1 {
+        @extend %estilosTitulosGrandes;
+      }
+      h2 {
+        margin-top: 10px;
+        @extend %estilosTitulosGrandes;
+      }
+      button {
+        @extend %button;
+        margin-top: 50px;
+        font-family: $tipografiaSecundaria;
+      }
     }
-    h1 {
-      font-size: clamp(40px, 8vw, 90px);
-      color: $colorBlueWhite;
-      font-weight: 600;
+  }
+  .secctionTwo {
+    padding: 100px 100px;
+
+    background-color: $backgroundColor;
+    h3 {
+      @extend %estilosTitulos;
     }
-    h2 {
-      margin-top: 10px;
-      font-size: clamp(40px, 8vw, 90px);
-      color: $colorBlueWhite;
-      font-weight: 600;
-    }
-    button {
-      @extend %button;
-      margin-top: 50px;
-      font-family: $tipografiaSecundaria;
+    .secctionTwo__contenedor {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 50px;
+      margin: 0 auto;
+      .izquierda {
+        justify-self: center;
+        img {
+          max-width: 500px;
+        }
+      }
+      .derecha {
+        p {
+          @extend %estilosTextos;
+        }
+        .contenedorBotones {
+          
+          display: flex;
+          gap: 20px;
+          button {
+            @extend %button;
+          }
+        }
+      }
     }
   }
 }

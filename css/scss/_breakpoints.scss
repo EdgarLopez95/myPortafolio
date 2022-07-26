@@ -2,9 +2,21 @@
   .heder .nav {
     display: none;
   }
+  .contacto {
+    padding: 0 40px;
+    .contenedor {
+      padding-bottom: 170px;
+    }
+  }
   .mainIndex {
     .secctionOne {
       padding: 0 40px;
+    }
+    .secctionTwo {
+      padding: 0 40px;
+      .secctionTwo__contenedor {
+        grid-template-columns: 1fr;
+      }
     }
   }
   .heder .navCelu {
@@ -12,7 +24,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: $backgroundColor;
+    background-color: $colorAzulOscuro;
+    padding: 5px 0;
     ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

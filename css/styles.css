@@ -173,7 +173,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.mainContacto .gridContacto .container #contact button[type=submit], .mainIndex .secctionOne__div button, .heder .nav .menu .resume a {
+.mainContacto .gridContacto .container #contact button[type=submit], .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button, .mainIndex .secctionOne .secctionOne__div button, .contacto .contenedor button, .heder .nav .menu .resume a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -188,17 +188,37 @@ body {
   letter-spacing: 1px;
   transition: all 0.15s linear;
 }
-.mainContacto .gridContacto .container #contact button[type=submit]:hover, .mainIndex .secctionOne__div button:hover, .heder .nav .menu .resume a:hover {
+.mainContacto .gridContacto .container #contact button[type=submit]:hover, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button:hover, .mainIndex .secctionOne .secctionOne__div button:hover, .contacto .contenedor button:hover, .heder .nav .menu .resume a:hover {
   background-color: #010e3d;
   border-color: #00aaff;
   color: #00aaff;
   transform: translateY(-5px) scale(1);
 }
-.mainContacto .gridContacto .container #contact button[type=submit]:active, .mainIndex .secctionOne__div button:active, .heder .nav .menu .resume a:active {
+.mainContacto .gridContacto .container #contact button[type=submit]:active, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button:active, .mainIndex .secctionOne .secctionOne__div button:active, .contacto .contenedor button:active, .heder .nav .menu .resume a:active {
   background-color: transparent;
   border-color: #00aaff;
   color: #00aaff;
   transform: translateY(5px) scale(0.95);
+}
+
+.mainIndex .secctionOne .secctionOne__div h2, .mainIndex .secctionOne .secctionOne__div h1, .contacto .contenedor h2 {
+  font-size: clamp(40px, 8vw, 90px);
+  color: #ccf2ff;
+  font-weight: 600;
+}
+
+.mainIndex .secctionTwo h3, .contacto h3 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #00aaff;
+  margin-bottom: 50px;
+}
+
+.mainIndex .secctionTwo .secctionTwo__contenedor .derecha p, .contacto .contenedor p {
+  font-size: 20px;
+  color: #ccf2ff;
+  padding-bottom: 20px;
 }
 
 .footer .derecho, .footer .centro, .footer .izquierdo {
@@ -208,7 +228,7 @@ body {
   color: white;
   text-align: center;
   font-size: 1.5rem;
-  padding: 15px 0 15px 0;
+  padding: 25px 0 20px 0;
 }
 
 .footer .derecho h3, .footer .centro h3, .footer .izquierdo h3 {
@@ -224,7 +244,7 @@ body {
 .heder .nav {
   width: 100%;
   height: 10rem;
-  background-color: rgba(0, 10, 47, 0.5);
+  background-color: rgba(0, 10, 47, 0.9);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -261,6 +281,30 @@ body {
 }
 .heder .navCelu {
   display: none;
+}
+
+.contacto {
+  background-color: rgb(0, 10, 47);
+  padding-bottom: 80px;
+}
+.contacto h3 {
+  padding-top: 150px;
+}
+.contacto .contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contacto .contenedor h2 {
+  text-align: center;
+}
+.contacto .contenedor p {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+.contacto .contenedor button {
+  margin: 0 auto;
 }
 
 .footer {
@@ -308,32 +352,44 @@ body {
   display: flex;
   align-items: center;
 }
-.mainIndex .secctionOne__div {
+.mainIndex .secctionOne .secctionOne__div {
   width: 1200px;
   margin: 0 auto;
 }
-.mainIndex .secctionOne__div p {
+.mainIndex .secctionOne .secctionOne__div p {
   margin-bottom: 30px;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   color: #00aaff;
 }
-.mainIndex .secctionOne__div h1 {
-  font-size: clamp(40px, 8vw, 90px);
-  color: #ccf2ff;
-  font-weight: 600;
-}
-.mainIndex .secctionOne__div h2 {
+.mainIndex .secctionOne .secctionOne__div h2 {
   margin-top: 10px;
-  font-size: clamp(40px, 8vw, 90px);
-  color: #ccf2ff;
-  font-weight: 600;
 }
-.mainIndex .secctionOne__div button {
+.mainIndex .secctionOne .secctionOne__div button {
   margin-top: 50px;
   font-family: "Roboto Mono", monospace;
 }
-
+.mainIndex .secctionTwo {
+  padding: 100px 100px;
+  background-color: rgb(0, 10, 47);
+}
+.mainIndex .secctionTwo .secctionTwo__contenedor {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 50px;
+  margin: 0 auto;
+}
+.mainIndex .secctionTwo .secctionTwo__contenedor .izquierda {
+  justify-self: center;
+}
+.mainIndex .secctionTwo .secctionTwo__contenedor .izquierda img {
+  max-width: 500px;
+}
+.mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones {
+  display: flex;
+  gap: 20px;
+}
 .mainRecorrido .sectionRecorrido-uno {
   width: 100%;
   min-height: 400px;
@@ -615,15 +671,28 @@ body {
   .heder .nav {
     display: none;
   }
+  .contacto {
+    padding: 0 40px;
+  }
+  .contacto .contenedor {
+    padding-bottom: 170px;
+  }
   .mainIndex .secctionOne {
     padding: 0 40px;
+  }
+  .mainIndex .secctionTwo {
+    padding: 0 40px;
+  }
+  .mainIndex .secctionTwo .secctionTwo__contenedor {
+    grid-template-columns: 1fr;
   }
   .heder .navCelu {
     display: block;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgb(0, 10, 47);
+    background-color: #0a1a44;
+    padding: 5px 0;
   }
   .heder .navCelu ul {
     display: grid;

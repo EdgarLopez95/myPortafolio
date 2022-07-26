@@ -14,26 +14,43 @@ $tipografiaSecundaria: "Roboto Mono", monospace;
   border-radius: 5px;
   border: 1px solid transparent;
   color: #ffffff;
-  background-color:$blueElements;
+  background-color: $blueElements;
   box-shadow: 0 0 10px $blueElements;
   font-size: 16px;
   letter-spacing: 1px;
   transition: all 0.15s linear;
   &:hover {
     background-color: #010e3d;
-    border-color:$blueElements;
-    color:$blueElements;
-    transform: translateY(-5px) scale(1.00);
-   }
-   
-   &:active {
-    background-color: transparent;
-    border-color:$blueElements;
-    color:$blueElements;
-    transform: translateY(5px) scale(0.95);
-   }
-}
+    border-color: $blueElements;
+    color: $blueElements;
+    transform: translateY(-5px) scale(1);
+  }
 
+  &:active {
+    background-color: transparent;
+    border-color: $blueElements;
+    color: $blueElements;
+    transform: translateY(5px) scale(0.95);
+  }
+}
+%estilosTitulosGrandes {
+  font-size: clamp(40px, 8vw, 90px);
+  color: $colorBlueWhite;
+  font-weight: 600;
+  
+}
+%estilosTitulos {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: $blueElements;
+  margin-bottom: 50px;
+}
+%estilosTextos {
+  font-size: 20px;
+  color: $colorBlueWhite;
+  padding-bottom: 20px;
+}
 %estilosFooter {
   width: 100%;
   width: 100%;
@@ -41,7 +58,7 @@ $tipografiaSecundaria: "Roboto Mono", monospace;
   color: white;
   text-align: center;
   font-size: 1.5rem;
-  padding: 15px 0 15px 0;
+  padding: 25px 0 20px 0;
 }
 
 %h3titulos {
