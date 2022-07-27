@@ -1,7 +1,11 @@
-.mainPortafolio{
-  .sectionOne{
-    .contenedor{
-      
+.mainPortafolio {
+  .sectionOne {
+    height: 100vh;
+    background-color: $backgroundColor;
+    background-image: url(https://github.com/EdgarLopez95/myPortafolio/blob/main/assets/banner-portafolio.jpg?raw=true);
+    padding: 0 100px;
+    background-repeat: no-repeat;
+    .contenedor {
     }
   }
 }

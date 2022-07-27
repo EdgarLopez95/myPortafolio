@@ -513,6 +513,13 @@ body {
 .mainRecorrido .sectionTwo .freelance .contenedor__trabajo .imagen img:hover {
   transform: scale(1.1);
 }
+.mainPortafolio .sectionOne {
+  height: 100vh;
+  background-color: rgb(0, 10, 47);
+  background-image: url(https://github.com/EdgarLopez95/myPortafolio/blob/main/assets/banner-portafolio.jpg?raw=true);
+  padding: 0 100px;
+  background-repeat: no-repeat;
+}
 .mainServicios .sectionServicios-uno {
   width: 100%;
   min-height: 700px;
