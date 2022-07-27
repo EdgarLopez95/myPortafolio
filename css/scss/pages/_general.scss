@@ -50,15 +50,22 @@
   }
 }
 .contacto {
+
+  margin: 0 auto;
   background-color: $backgroundColor;
   padding-bottom: 80px;
   h3 {
-    padding-top: 150px;
+    border-top: 1px solid  rgb(19, 32, 80);
+  max-width: 1200px;
+  margin: 0 auto;
+    padding-top: 100px;
     @extend %estilosTitulos;
   }
   .contenedor {
+    
     max-width: 1200px;
     margin: 0 auto;
+    
     h2 {
       text-align: center;
       @include estilosTitulosGrandes;

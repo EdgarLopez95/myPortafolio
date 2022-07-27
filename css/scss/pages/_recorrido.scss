@@ -14,7 +14,8 @@
       display: none;
     }
     .fotoPerfil {
-      max-width: 500px;
+      max-width: 400px;
+      margin: 0 auto;
       transition: all 300ms;
       &:hover {
         transform: scale(1.1);
@@ -29,12 +30,18 @@
     }
   }
   .sectionTwo {
-    padding: 100px 100px;
+    padding: 100px 100px 0 100px;
     background-color: $backgroundColor;
+    .trabajo,
+    .freelance {
+      border-top: 1px solid  rgb(19, 32, 80);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
     .universidad,
     .trabajo,
     .freelance {
-      padding-top: 100px;
+      padding: 100px 0;
       h3 {
         padding-bottom: 50px;
         @extend %estilosTitulos;
@@ -43,6 +50,26 @@
         max-width: 1200px;
         display: grid;
         grid-template-columns: 2fr 3fr;
+        gap: 50px;
+        margin: 0 auto;
+        .imagen {
+          justify-self: center;
+          img {
+            max-width: 500px;
+            transition: all 300ms;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+        .texto {
+          @extend %estilosTextos;
+        }
+      }
+      .contenedor__trabajo {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
         gap: 50px;
         margin: 0 auto;
         .imagen {

@@ -69,10 +69,20 @@
     .sectionTwo {
       padding: 0 40px;
       .universidad,
-    .trabajo,
-    .freelance  {
+      .trabajo,
+      .freelance {
+        padding: 50px 0;
         .contenedor {
           grid-template-columns: 1fr;
+        }
+        .contenedor__trabajo{
+          grid-template-columns: 1fr;
+          .imagen{
+            order: 0;
+          }
+          .texto{
+            order: 1;
+          }
         }
       }
     }
