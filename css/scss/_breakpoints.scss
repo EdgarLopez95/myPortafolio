@@ -105,6 +105,17 @@
       }
     }
   }
+  .mainServicios {
+    .sectionOne {
+      padding: 0 40px;
+    }
+    .sectionTwo {
+      padding: 0 40px 100px 40px;
+      .contenedorSeccion {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -115,6 +126,14 @@
         width: 120px;
         padding-bottom: 40px;
         margin: 0 auto;
+      }
+    }
+  }
+  .mainServicios {
+
+    .sectionTwo {
+      .contenedorSeccion {
+        grid-template-columns: 1fr;
       }
     }
   }

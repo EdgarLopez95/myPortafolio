@@ -173,7 +173,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.mainContacto .gridContacto .container #contact button[type=submit], .mainPortafolio .sectionTwo .contenedorSeccion .trabajos button, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button, .mainIndex .secctionOne .secctionOne__div button, .contacto .contenedor button, .heder .nav .menu .resume a {
+.mainContacto .gridContacto .container #contact button[type=submit], .mainServicios .sectionTwo .contenedorSeccion .servicio button, .mainPortafolio .sectionTwo .contenedorSeccion .trabajos button, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button, .mainIndex .secctionOne .secctionOne__div button, .contacto .contenedor button, .heder .nav .menu .resume a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -188,20 +188,20 @@ body {
   letter-spacing: 1px;
   transition: all 0.15s linear;
 }
-.mainContacto .gridContacto .container #contact button[type=submit]:hover, .mainPortafolio .sectionTwo .contenedorSeccion .trabajos button:hover, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button:hover, .mainIndex .secctionOne .secctionOne__div button:hover, .contacto .contenedor button:hover, .heder .nav .menu .resume a:hover {
+.mainContacto .gridContacto .container #contact button[type=submit]:hover, .mainServicios .sectionTwo .contenedorSeccion .servicio button:hover, .mainPortafolio .sectionTwo .contenedorSeccion .trabajos button:hover, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button:hover, .mainIndex .secctionOne .secctionOne__div button:hover, .contacto .contenedor button:hover, .heder .nav .menu .resume a:hover {
   background-color: #010e3d;
   border-color: #00aaff;
   color: #00aaff;
   transform: translateY(-5px) scale(1);
 }
-.mainContacto .gridContacto .container #contact button[type=submit]:active, .mainPortafolio .sectionTwo .contenedorSeccion .trabajos button:active, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button:active, .mainIndex .secctionOne .secctionOne__div button:active, .contacto .contenedor button:active, .heder .nav .menu .resume a:active {
+.mainContacto .gridContacto .container #contact button[type=submit]:active, .mainServicios .sectionTwo .contenedorSeccion .servicio button:active, .mainPortafolio .sectionTwo .contenedorSeccion .trabajos button:active, .mainIndex .secctionTwo .secctionTwo__contenedor .derecha .contenedorBotones button:active, .mainIndex .secctionOne .secctionOne__div button:active, .contacto .contenedor button:active, .heder .nav .menu .resume a:active {
   background-color: transparent;
   border-color: #00aaff;
   color: #00aaff;
   transform: translateY(5px) scale(0.95);
 }
 
-.mainPortafolio .sectionTwo .contenedorSeccion .trabajos h3, .mainRecorrido .sectionTwo .universidad h3,
+.mainServicios .sectionTwo .contenedorSeccion .servicio h3, .mainPortafolio .sectionTwo .contenedorSeccion .trabajos h3, .mainRecorrido .sectionTwo .universidad h3,
 .mainRecorrido .sectionTwo .trabajo h3,
 .mainRecorrido .sectionTwo .freelance h3, .mainIndex .secctionTwo h3, .contacto h3 {
   text-align: center;
@@ -559,89 +559,52 @@ body {
   margin-top: 30px;
 }
 
-.mainServicios .sectionServicios-uno {
-  width: 100%;
-  min-height: 700px;
+.mainServicios .sectionOne {
+  height: 70vh;
   background-color: rgb(0, 10, 47);
-}
-.mainServicios .sectionServicios-uno h2 {
-  font-weight: 900;
-  color: white;
-  font-size: 8.4rem;
-  line-height: 400px;
-  text-align: center;
-}
-.mainServicios .sectionServicios-uno .servicios {
-  max-width: 1200px;
-  margin: 50px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 200px;
-  gap: 30px;
-}
-.mainServicios .sectionServicios-uno .servicios .izquierda {
-  background-color: #00aaff;
-  width: 50%;
-  height: 100%;
-  border-radius: 20px;
-  margin: 0 auto;
-}
-.mainServicios .sectionServicios-uno .servicios .izquierda h3 {
-  font-weight: 900;
-  color: rgb(0, 10, 47);
-  font-size: 5.4rem;
-  line-height: 200px;
-  text-align: center;
-}
-.mainServicios .sectionServicios-uno .servicios .derecha {
-  background-color: #00aaff;
-  width: 50%;
-  height: 100%;
-  border-radius: 20px;
-  margin: 0 auto;
-}
-.mainServicios .sectionServicios-uno .servicios .derecha h3 {
-  font-weight: 900;
-  color: rgb(0, 10, 47);
-  font-size: 5.4rem;
-  line-height: 200px;
-  text-align: center;
-}
-.mainServicios .sectionRecorrido-dos {
-  margin: 50px 0;
-}
-.mainServicios .sectionRecorrido-dos .gridRecorridoDos {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  background-image: url(https://github.com/EdgarLopez95/myPortafolio/blob/main/assets/banner-servicios.jpg?raw=true);
+  background-position: bottom;
+  padding: 0 100px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-izquierda div img {
-  background-color: #bccad3;
-  width: 90%;
+.mainServicios .sectionOne .contenedor h1 {
+  font-size: clamp(40px, 8vw, 90px);
+  color: #ccf2ff;
+  font-weight: 600;
+}
+.mainServicios .sectionTwo {
+  padding: 100px 100px;
+  background-color: rgb(0, 10, 47);
+}
+.mainServicios .sectionTwo .contenedorSeccion {
+  max-width: 1200px;
   margin: 0 auto;
-  height: 500px;
-  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
-.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div {
-  width: 90%;
+.mainServicios .sectionTwo .contenedorSeccion .servicio {
+  background-color: #0a1a44;
+  width: 100%;
+  transition: all 300ms;
+  padding: 15px 0 25px 0;
 }
-.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div h3 {
-  font-size: 3.6rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #0a1a44;
-  padding: 20px 0;
-  font-weight: 900;
-  line-height: 30px;
+.mainServicios .sectionTwo .contenedorSeccion .servicio img {
+  max-width: 150px;
+  margin: 0 auto;
 }
-.mainServicios .sectionRecorrido-dos .gridRecorridoDos .sectionRecorrido-dos-derecha div p {
-  font-size: 1.6rem;
-  line-height: 20px;
-  max-width: 600px;
-  margin-bottom: 40px;
+.mainServicios .sectionTwo .contenedorSeccion .servicio h3 {
+  font-size: 20px;
+  margin: 10px 0 20px 0;
+}
+.mainServicios .sectionTwo .contenedorSeccion .servicio button {
+  margin: 0 auto;
+}
+.mainServicios .sectionTwo .contenedorSeccion .servicio:hover {
+  transform: scale(1.1);
 }
 
 .mainContacto {
@@ -856,6 +819,15 @@ body {
   .mainPortafolio .sectionTwo .contenedorSeccion .trabajos .trabajos__contenedor {
     grid-template-columns: 1fr;
   }
+  .mainServicios .sectionOne {
+    padding: 0 40px;
+  }
+  .mainServicios .sectionTwo {
+    padding: 0 40px 100px 40px;
+  }
+  .mainServicios .sectionTwo .contenedorSeccion {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media screen and (max-width: 425px) {
   .mainRecorrido .sectionOne .logo {
@@ -863,5 +835,8 @@ body {
     width: 120px;
     padding-bottom: 40px;
     margin: 0 auto;
+  }
+  .mainServicios .sectionTwo .contenedorSeccion {
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=styles.css.map */
