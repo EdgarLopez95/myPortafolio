@@ -1,11 +1,49 @@
 .mainPortafolio {
   .sectionOne {
-    height: 100vh;
+    height: 70vh;
     background-color: $backgroundColor;
-    background-image: url(https://github.com/EdgarLopez95/myPortafolio/blob/main/assets/banner-portafolio.jpg?raw=true);
+    background-image: url(https://github.com/EdgarLopez95/myPortafolio/blob/main/assets/banner-portafolio-dos.jpg?raw=true);
+    background-position: bottom;
     padding: 0 100px;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .contenedor {
+      h1 {
+        @include estilosTitulosGrandes;
+      }
+    }
+  }
+  .sectionTwo {
+    padding: 100px 100px;
+    background-color: $backgroundColor;
+    .contenedorSeccion {
+      max-width: 1200px;
+      margin: 0 auto;
+      .trabajos {
+        padding-bottom: 100px;
+        h3 {
+          @extend %estilosTitulos;
+          padding-bottom: 50px;
+        }
+        .trabajos__contenedor {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 10px;
+          img {
+            transition: all 300ms;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+        button {
+          @extend %button;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+      }
     }
   }
 }

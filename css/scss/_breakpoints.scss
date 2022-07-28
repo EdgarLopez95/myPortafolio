@@ -75,13 +75,31 @@
         .contenedor {
           grid-template-columns: 1fr;
         }
-        .contenedor__trabajo{
+        .contenedor__trabajo {
           grid-template-columns: 1fr;
-          .imagen{
+          .imagen {
             order: 0;
           }
-          .texto{
+          .texto {
             order: 1;
+          }
+        }
+      }
+    }
+  }
+  .mainPortafolio {
+    .sectionOne {
+      padding: 0 40px;
+    }
+    .sectionTwo {
+      padding: 0 40px;
+      .contenedorSeccion {
+        .trabajos {
+          h3 {
+            padding-bottom: 0;
+          }
+          .trabajos__contenedor {
+            grid-template-columns: 1fr;
           }
         }
       }
