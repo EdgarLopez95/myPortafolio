@@ -243,12 +243,13 @@ body {
 .heder .nav {
   width: 100%;
   height: 10rem;
-  background-color: rgba(0, 10, 47, 0);
+  background-color: rgba(0, 10, 47, 0.8);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 4rem;
   position: fixed;
+  z-index: 1;
 }
 .heder .nav .logo a img {
   width: 12rem;
@@ -753,6 +754,7 @@ body {
   .heder .navCelu {
     display: block;
     position: fixed;
+    z-index: 1;
     bottom: 0;
     width: 100%;
     background-color: #0a1a44;
