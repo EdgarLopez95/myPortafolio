@@ -249,7 +249,6 @@ body {
   justify-content: space-between;
   padding: 0 4rem;
   position: fixed;
-  z-index: 1;
 }
 .heder .nav .logo a img {
   width: 12rem;
