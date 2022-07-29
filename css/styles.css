@@ -754,7 +754,6 @@ body {
   .heder .navCelu {
     display: block;
     position: fixed;
-    z-index: 0;
     bottom: 0;
     width: 100%;
     background-color: #0a1a44;
