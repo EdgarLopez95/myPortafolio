@@ -887,6 +887,9 @@ body {
   .contacto .contenedor h2 {
     display: none;
   }
+  .contacto .contenedor p {
+    display: none;
+  }
   .mainRecorrido .sectionOne .logo {
     display: block;
     width: 120px;
