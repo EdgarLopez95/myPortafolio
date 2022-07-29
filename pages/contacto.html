@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" href="../assets/iconologo.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,8 +21,9 @@
       name="keywords"
       content="DISEÑO, PROGRAMACION, MAQUETACION, FREELANCE"
     />
-    
-    <title>Home</title>
+
+    <title>Contacto</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="heder">
@@ -103,15 +104,26 @@
     <!-- <<<<<<<<<<<<<<<<<inicia el main>>>>>>>>>>>>>>>>>>> -->
     <main class="mainContacto">
       <section class="sectionOne">
-        <div class="contenedor">
+        <div
+          class="contenedor"
+          data-aos="fade-right"
+          data-aos-delay="250"
+          data-aos-duration="2500"
+        >
           <div class="izquierda">
-            <img src="../assets/logo.svg" alt="Logo Edgar Felipe" class="logo">
+            <img
+              src="../assets/logo.svg"
+              alt="Logo Edgar Felipe"
+              class="logo"
+            />
             <h3>Escribeme y ponte en</h3>
             <h1>Contacto</h1>
             <p>
-              Puedes contactarme a través de cualquiera de los canales indicados más adelante en caso de que tengas alguna pregunta sobre algún servicio
+              Puedes contactarme a través de cualquiera de los canales indicados
+              más adelante en caso de que tengas alguna pregunta sobre algún
+              servicio
             </p>
-            <div> 
+            <div>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/edgarfelipelopez/"
@@ -123,7 +135,7 @@
               <a target="_blank" href="https://github.com/EdgarLopez95"
                 ><img src="../assets/github.svg" alt="icono imagen github"
               /></a>
-            </div> 
+            </div>
           </div>
           <div class="derecha">
             <form>
@@ -152,7 +164,10 @@
           </div>
         </div>
       </section>
-      <!-- <<<<<<<<<<<<<<<<<inicia contacto>>>>>>>>>>>>>>>>>>> -->
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

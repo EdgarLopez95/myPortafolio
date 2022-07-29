@@ -889,9 +889,6 @@ body {
   .contacto .contenedor h2 {
     display: none;
   }
-  .contacto .contenedor p {
-    display: none;
-  }
   .mainRecorrido .sectionOne .logo {
     display: block;
     width: 120px;
@@ -910,5 +907,8 @@ body {
   }
   .mainContacto .sectionOne .contenedor .izquierda h3 {
     margin-bottom: 5px;
+  }
+  .mainContacto .sectionOne .contenedor .izquierda p {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
