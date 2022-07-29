@@ -116,6 +116,14 @@
       }
     }
   }
+  .mainContacto {
+    .sectionOne {
+      padding: 0 40px;
+      .contenedor {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -130,10 +138,18 @@
     }
   }
   .mainServicios {
-
     .sectionTwo {
       .contenedorSeccion {
         grid-template-columns: 1fr;
+      }
+    }
+  }
+  .mainContacto {
+    .sectionOne {
+      padding: 0 40px;
+      .contenedor {
+        grid-template-columns: 1fr;
+        gap: 10px;
       }
     }
   }
