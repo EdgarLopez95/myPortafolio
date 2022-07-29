@@ -40,6 +40,9 @@
         a {
           color: $colorAzulOscuro;
           @extend %button;
+         
+            padding: 15px 10px;
+         
           font-weight: bold;
         }
       }
@@ -78,6 +81,9 @@
       padding: 30px 0;
     }
     button {
+      a{
+        padding: 15px 10px;
+      }
       @extend %button;
       margin: 0 auto;
     }

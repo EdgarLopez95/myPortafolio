@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="icon" href="./assets/iconologo.svg">
+    <link rel="icon" href="./assets/iconologo.svg" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Roboto:wght@100;300;400;700;900&display=swap"
@@ -20,19 +21,18 @@
       name="keywords"
       content="DISEÑO, PROGRAMACION, MAQUETACION, FREELANCE"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
     <title>Home</title>
   </head>
   <body>
     <header class="heder">
-      <nav class="nav ">
+      <nav class="nav" data-aos="fade">
         <div class="logo">
-          <a href="index.html"><img src="./assets/logo.svg" alt="Logo Edgar Felipe" /></a>
+          <a href="index.html"
+            ><img src="./assets/logo.svg" alt="Logo Edgar Felipe"
+          /></a>
         </div>
-        <div class="menu animate__animated animate__fadeIn">
+        <div class="menu">
           <ul>
             <li>
               <a href="./pages/recorrido.html">Recorrido</a>
@@ -67,22 +67,34 @@
           </li>
           <li>
             <a href="./pages/recorrido.html">
-              <img src="./assets/recorrido.svg" alt="icono recorrido personita" />Recorrido</a
+              <img
+                src="./assets/recorrido.svg"
+                alt="icono recorrido personita"
+              />Recorrido</a
             >
           </li>
           <li>
             <a href="./pages/portafolio.html">
-              <img src="./assets/portaflio.svg" alt="icono portafolio maleta" />Portafolio</a
+              <img
+                src="./assets/portaflio.svg"
+                alt="icono portafolio maleta"
+              />Portafolio</a
             >
           </li>
           <li>
             <a href="./pages/servicios.html">
-              <img src="./assets/servicios.svg" alt="icono servicios paleta de colores" />Servicios</a
+              <img
+                src="./assets/servicios.svg"
+                alt="icono servicios paleta de colores"
+              />Servicios</a
             >
           </li>
           <li>
             <a href="./pages/contacto.html">
-              <img src="./assets/contacto.svg" alt="icono contacto, formulario" />Contacto</a
+              <img
+                src="./assets/contacto.svg"
+                alt="icono contacto, formulario"
+              />Contacto</a
             >
           </li>
         </ul>
@@ -92,8 +104,15 @@
     <main class="mainIndex">
       <!-- <<<<<<<<<<<<<<<<<inicia seccion uno>>>>>>>>>>>>>>>>>>> -->
       <section class="secctionOne">
-        <div class="secctionOne__div animate__animated animate__fadeInLeft animate__delay-1s" >
-          <img src="./assets/logo.svg" alt="Logo Edgar Felipe">
+        <div
+          class="secctionOne__div"
+          data-aos="fade-right"
+          data-aos-delay="850"
+          data-aos-duration="3000"
+        >
+          <a href="./index.html"
+            ><img src="./assets/logo.svg" alt="Logo Edgar Felipe"
+          /></a>
           <p>Hola, mucho gusto, me llamo</p>
           <h1>Edgar Felipe López</h1>
           <h2>Frontend y diseñador</h2>
@@ -106,7 +125,12 @@
       <section class="secctionTwo">
         <h3>Acerca de mi</h3>
         <div class="secctionTwo__contenedor">
-          <div class="izquierda">
+          <div
+            class="izquierda"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src="./assets/foto-acerca-de-mi.png"
               alt="foto mia trabajando como fotografo"
@@ -143,14 +167,15 @@
           </div>
         </div>
       </section>
-         <!-- <<<<<<<<<<<<<<<<<inicia contacto>>>>>>>>>>>>>>>>>>> -->
+      <!-- <<<<<<<<<<<<<<<<<inicia contacto>>>>>>>>>>>>>>>>>>> -->
       <section class="contacto">
         <h3>Contacto</h3>
         <div class="contenedor">
           <h2>Ponte en contacto</h2>
           <p>
-            Si tienes alguna pregunta frente a algunos de los servicios, ponte
-            en contacto para poder ayudarte en todo lo que necesites
+            Puedes contactarme a través de cualquiera de los canales indicados
+            más adelante en caso de que tengas alguna pregunta sobre algún
+            servicio
           </p>
           <button><a href="./pages/contacto.html">Contacto</a></button>
         </div>
@@ -204,5 +229,9 @@
         /></a>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

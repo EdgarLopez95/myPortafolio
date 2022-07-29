@@ -29,6 +29,9 @@
       }
       button {
         @extend %button;
+        a{
+          padding: 15px 10px;
+        }
         margin-top: 50px;
         font-family: $tipografiaSecundaria;
       }
@@ -65,6 +68,9 @@
           display: flex;
           gap: 20px;
           button {
+            a{
+              padding: 15px 10px;
+            }
             @extend %button;
           }
         }

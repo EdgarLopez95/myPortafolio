@@ -9,12 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .contenedor {
+
+      .contenedor {
+        .logo {
+          display: none;
+        }
+      }
       h1 {
         @include estilosTitulosGrandes;
       }
     }
-  }
+  
   .sectionTwo {
     padding: 100px 100px;
     background-color: $backgroundColor;
@@ -41,6 +46,9 @@
         button {
           @extend %button;
           margin: 0 auto;
+          a{
+            padding: 15px 10px;
+          }
         }
 
         &:hover {

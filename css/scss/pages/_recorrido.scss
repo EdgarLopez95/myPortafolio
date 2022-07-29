@@ -34,7 +34,7 @@
     background-color: $backgroundColor;
     .trabajo,
     .freelance {
-      border-top: 1px solid  rgb(19, 32, 80);
+      border-top: 1px solid rgb(19, 32, 80);
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -63,7 +63,16 @@
           }
         }
         .texto {
-          @extend %estilosTextos;
+          .tiempo {
+            font-family: $tipografiaSecundaria;
+            font-size: 20px;
+            color: $blueElements;
+            text-align: left;
+            padding-bottom: 40px;
+          }
+          p {
+            @extend %estilosTextos;
+          }
         }
       }
       .contenedor__trabajo {
@@ -83,7 +92,16 @@
           }
         }
         .texto {
-          @extend %estilosTextos;
+          .tiempo {
+            font-family: $tipografiaSecundaria;
+            font-size: 20px;
+            color: $blueElements;
+            text-align: left;
+            padding-bottom: 40px;
+          }
+          p {
+            @extend %estilosTextos;
+          }
         }
       }
     }

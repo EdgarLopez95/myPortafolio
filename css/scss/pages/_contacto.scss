@@ -16,6 +16,9 @@
       align-items: center;
       gap: 50px;
       .izquierda {
+        .logo {
+          display: none;
+        }
         h3 {
           margin-bottom: 30px;
           font-family: $tipografiaSecundaria;
@@ -27,6 +30,19 @@
         }
         p {
           @extend %estilosTextos;
+        }
+        div {
+          max-width: 140px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 15px;
+          a {
+            transition: all 0.15s linear;
+            &:hover {
+              transform: translateY(0px) scale(1.2);
+              filter: opacity(0.4) drop-shadow(0 0 0 $blueElements);
+            }
+          }
         }
       }
       .derecha {
