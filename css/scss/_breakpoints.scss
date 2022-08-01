@@ -97,7 +97,7 @@
   .mainPortafolio {
     .sectionOne {
       padding: 0 40px;
-      .contenedor{
+      .contenedor {
         .logo {
           display: block;
           width: 120px;
@@ -123,7 +123,7 @@
   .mainServicios {
     .sectionOne {
       padding: 0 40px;
-      .contenedor{
+      .contenedor {
         .logo {
           display: block;
           width: 120px;
@@ -163,7 +163,6 @@
       h2 {
         display: none;
       }
-      
     }
   }
   .mainRecorrido {
@@ -185,7 +184,7 @@
   }
   .mainContacto {
     .sectionOne {
-      padding: 0 40px;
+      padding: 0 0px;
       .contenedor {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -193,8 +192,8 @@
           h3 {
             margin-bottom: 5px;
           }
-          p{
-        display: none;
+          p {
+            display: none;
           }
         }
       }

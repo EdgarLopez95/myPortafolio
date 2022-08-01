@@ -899,7 +899,7 @@ body {
     grid-template-columns: 1fr;
   }
   .mainContacto .sectionOne {
-    padding: 0 40px;
+    padding: 0 0px;
   }
   .mainContacto .sectionOne .contenedor {
     grid-template-columns: 1fr;
